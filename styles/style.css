@@ -153,6 +153,16 @@ main{
 	border-bottom: none;
 }
 
+.filter{
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+}
+
+#character-list img{
+	clip-path: circle();
+}
+
 /***** box navs *****/
 
 ul.box-nav{

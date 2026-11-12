@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--style import-->
+	<link href="../styles/style.css" rel="stylesheet" type="text/css" media="all">
+
+	<!--page title-->
+	<title>Rebirth Wiki</title>
+
+</head>
+
+<body>
+
+	<!--page container. make sure everything is inside this-->
+	<div class="container">
+
+		<!--sidebar-->
+		<sidebar>
+
+			<!--logo image-->
+			<a href="index.html"><img src="../images/REBIRTH_Logo_2.png" class="logo-image" alt="home page"></a>
+
+			<!--sidebar nav-->
+			<nav>
+				<!--header-->
+				<h2>Section</h2>
+
+				<!--list of links-->
+				<ul>
+					<li><a href="../index.html">Main Page</a></li>
+					<li><a href="characters.html">Characters</a></li>
+					<li><a href="#">Lore Entries</a></li>
+					<li><a href="#">Magic</a></li>
+					<li><a href="#">Species</a></li>
+					<li><a href="#">Locations</a></li>
+					<li><a href="#">Weapons</a></li>
+				</ul>
+			</nav><!--end of sidebar nav-->
+
+			<!--another sidebar nav-->
+			<nav>
+				<!--header-->
+				<h2>Creators</h2>
+
+				<!--list of links-->
+				<ul>
+					<li><a href="#">Jaydon</a></li>
+					<li><a href="#">Joan</a></li>
+					<li><a href="#">Pot</a></li>
+					<li><a href="#">Vovka</a></li>
+				</ul>
+			</nav><!--end of sidebar nav-->
+
+		</sidebar><!--end of sidebar-->
+
+		<!--main-->
+		<main>
+
+			<!--top header-->
+			<h1>Characters</h1>
+
+			<!--box row. this one only contains one box-->
+			<div class="box-row">
+
+				<!--box. this one is a nav instead of a div because it contains a box nav-->
+				<nav class="box">
+
+					<!--header, contains filters-->
+					<h2>
+						<div class="filters">
+
+							<div class="filter" data-filter-group="creator">
+								<label><input type="checkbox" value="jay" checked> Jay</label>
+								<label><input type="checkbox" value="joan" checked> Joan</label>
+								<label><input type="checkbox" value="pot" checked> Pot</label>
+								<label><input type="checkbox" value="vovka" checked> Vovka</label>
+								<label><input type="checkbox" value="other" checked> Other</label>
+							</div>
+
+							<div class="filter" data-filter-group="status">
+								<label><input type="checkbox" value="alive" checked> Alive</label>
+								<label><input type="checkbox" value="dead" checked> Dead</label>
+							</div>
+
+							<div class="filter" data-filter-group="appearance">
+								<label><input type="checkbox" value="rp" checked>Roleplay</label>
+								<label><input type="checkbox" value="lore" checked>Lore</label>
+							</div>
+
+							<div class="filter" data-filter-group="universe">
+
+								<label>
+									<input type="checkbox" value="rebirth" checked>
+									Rebirth
+								</label>
+
+								<label>
+									<input type="checkbox" value="ssenmodnar" checked>
+									Ssenmodnar
+								</label>
+
+								<label>
+									<input type="checkbox" value="roblox" checked>
+									Roblox
+								</label>
+
+								<label class="filter-mode">
+									<input type="checkbox" id="universe-exclusive">
+									Exclusive
+								</label>
+
+							</div>
+
+							<div class="filter" data-filter-group="species">
+								<label><input type="checkbox" value="human" checked> Human</label>
+								<label><input type="checkbox" value="monster" checked> Monster</label>
+								<label><input type="checkbox" value="angel" checked> Angel</label>
+								<label><input type="checkbox" value="demon" checked> Demon</label>
+								<label><input type="checkbox" value="alien" checked> Alien</label>
+								<label><input type="checkbox" value="robot" checked> Robot</label>
+								<label><input type="checkbox" value="higher" checked> Higher Being</label>
+							</div>
+
+						</div>
+					</h2>
+
+
+					<!--box nav, this is where characters are added to the view for selection-->
+					<div id="character-list">
+					</div>
+
+				</nav><!--end of box-->
+
+			</div><!--end of box row-->
+
+		</main><!--end of main-->
+
+		<!--footer-->
+		<footer>
+
+			<p>How'd you like my jarona | <a href="characters.html">Go up</a></p>
+
+		</footer><!--end of footer-->
+
+	</div><!--end of page container-->
+
+	<script src="../scripts/characters/characters-data.js"></script>
+	<script src="../scripts/characters/characters.js"></script>
+	<script src="../scripts/characters/characters-filter.js"></script>
+
+	<script>
+		filterCharacters();
+	</script>
+</body>
+
+</html>
