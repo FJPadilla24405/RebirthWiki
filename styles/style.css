@@ -284,7 +284,7 @@ figure.gallery-image{
 
 figure.gallery-image img{
 	border: 2px solid var(--boxborder);
-	max-height: 200px;
+	max-height: 300px;
 }
 
 figure.gallery-image figcaption{

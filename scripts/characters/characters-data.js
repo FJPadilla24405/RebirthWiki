@@ -22,7 +22,7 @@ const characters = [
     {
         name: "Frisky",
         image: "../images/characters/pot/rp/frisky/Icon.png",
-        link: "#",
+        link: "characters/pot/rp/frisky.html",
         creator: "pot",
         status: "alive",
         appearance: "rp",
