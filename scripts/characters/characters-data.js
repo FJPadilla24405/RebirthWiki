@@ -12,7 +12,7 @@ const characters = [
     {
         name: "Dark",
         image: "../images/characters/vovka/dark/Icon.png",
-        link: "#",
+        link: "characters/vovka/rp/dark.html",
         creator: "vovka",
         status: "alive",
         appearance: "rp",
